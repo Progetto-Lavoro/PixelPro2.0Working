@@ -4,6 +4,7 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     centeredSlides: true,
     loop: true,
     slidesPerView: 'auto',
+    spaceBetween: 20,
     coverflowEffect: {
       rotate: 0,
       stretch: 0,

@@ -14,6 +14,10 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+      dynamicBullets: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">'+index+'</span>';
+      },
     },
     navigation: {
       nextEl: '.swiper-button-next',

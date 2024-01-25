@@ -17,7 +17,7 @@ let projects = [
       name: 'admin dashboard',
       about: 'Progetto per una dashboard di amministrazione che utilizza componenti dichiarativi. Progettato con una interfaccia intuitiva per gli utenti per  ottimizzare le prestazioni della tua applicazione web!',
       tags: '#portfolio',
-      live: 'https://admin-dashboard-beta-one.vercel.app/dashboard',
+      live: 'https://admin-dashboard-beta-one.vercel.app/',
       image: 'img/admin-dashboard.jpg'
   },
   {

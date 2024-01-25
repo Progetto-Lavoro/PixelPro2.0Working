@@ -2,8 +2,8 @@
 
 .boxGr{
     position: relative;
-    width: 600px;
-    height: 600px;
+    width: 320px;
+    height: 320px;
     border: 2px solid white;
     border-radius: 50%;
   }
@@ -28,7 +28,7 @@
     transition: .5s;
     border: 1px solid white;
     transform: rotate(calc(360deg/8 * var(--i)));
-    transform-origin: 340px;
+    transform-origin: 200px;
     z-index: 5;
   }
   
@@ -89,7 +89,7 @@
   }
   
   .contentBox.active{
-    transform: scale(1);
+    transform: scale(.5);
     opacity: 1;
     transition-delay: .5s;
     border: 2px dotted bisque;
@@ -148,6 +148,9 @@
   .contentBox .cardBox .textBox .sci{
     position: relative;
     display: flex;
+    align-content: space-between;
+    padding: 0;
+    justify-content: center;
     gap: 7px;
     margin-top: 10px;
   }

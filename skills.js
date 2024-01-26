@@ -14,6 +14,22 @@ for (let i = 0; i < imgBox.length; i++) {
     })
 }
 
+const imgBox2 = document.querySelectorAll('.imgBox2');
+const contentBox2 = document.querySelectorAll('.contentBox2');
+
+for (let i = 0; i < imgBox2.length; i++) {
+    imgBox2[i].addEventListener('mouseover',function(){
+        for(let i = 0; i < contentBox2.length; i++){
+            contentBox2[i].className = 'contentBox2';
+        }
+        document.getElementById(this.dataset.id).className = 'contentBox2 active';
+        for (let i = 0; i < imgBox2.length; i++) {
+           imgBox2[i].className = 'imgBox2';
+        }
+        this.className = 'imgBox2 active'
+    })
+}
+
 
 
 

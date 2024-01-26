@@ -110,6 +110,8 @@
     width: 150px;
     height: 150px;
     border-bottom: 10px;
+    pointer-events: none;
+    z-index: 1
   }
   
   .contentBox .cardBox .imgBox img{

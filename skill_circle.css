@@ -177,7 +177,8 @@
   }
   
   .contentBox .cardBox .textBox .sci li a:hover{
-    background: red;
+    background: #ffd500;
+    color: black;
   }
   
   /* parte circle skills */
@@ -358,7 +359,8 @@
   }
   
   .contentBox2 .cardBox2 .textBox2 .sci2 li a:hover{
-    background: red;
+    background: #ffd500;
+    color: black;
   }
 
    /* parte circle skills */
@@ -540,5 +542,6 @@
   }
   
   .contentBox3 .cardBox3 .textBox3 .sci3 li a:hover{
-    background: red;
+    background: #ffd500;
+    color: black;
   }

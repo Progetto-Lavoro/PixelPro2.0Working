@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="skill_circle.css">
   <link rel="stylesheet" href="media_q.css">
+  <link rel="stylesheet" href="faq.css">
+  <link rel="stylesheet" href="form.css">
 </head>
 <body>
   
@@ -783,23 +785,23 @@
           Sentiti libero di fare qualsiasi domanda. Ci piacerebbe conoscere le tue idee e lavorare con te.
         </p>
       </div>
-
-      <div class="col-6">
+      <!-- Form -->
+      <div class="col-12 col-lg-6 mb-5 mb-lg-2 d-flex justify-content-center align-items-center">
         
-        <form id="contact-form" class="text-white" method="post">
+        <form id="contact-form" class="formCustom" method="post">
           <div class="mb-3">
-              <label for="user_name" class="form-label">Name</label>
-              <input type="text" class="form-control" name="user_name" id="user_name" required>
+              <label for="user_name" class="form-label labelCustom">Name</label>
+              <input type="text" class="form-control inputCustom" name="user_name" placeholder="Tuo nome" id="user_name" required>
           </div>
 
           <div class="mb-3">
-              <label for="user_email" class="form-label">Email</label>
-              <input type="email" class="form-control" name="user_email" id="user_email" required>
+              <label for="user_email" class="labelCustom">Email</label>
+              <input type="email" class="form-control inputCustom" name="user_email" placeholder="Tua mail" id="user_email" required>
           </div>
 
           <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
+              <label for="message" class="labelCustom">Message</label>
+              <textarea class="form-control textareaCustom" name="message" id="message" rows="6" placeholder="Messaggio" required></textarea>
           </div>
 
           <div class="mb-3">
@@ -809,6 +811,111 @@
         </form>
 
       </div>
+      <!-- FAQ -->
+      <div class="col-12 col-lg-6 mt-5 mt-lg-1">
+        <div class="recinto">
+
+          <h1 class="text-white">Domande Frequenti!</h1>
+
+          <div class="tab">
+
+            <input type="radio" name="acc" id="acc1">
+
+            <label for="acc1">
+              <h2>01</h2>
+              <h3>Quanto tempo occorre per avere il sito online?</h3>
+            </label>
+
+            <div class="content">
+              <p>Dalla firma dell'incarico che coincide col
+                 pagamento dei servizi, il sito viene progettato, 
+                 costruito e messo online entro 30 giorni
+                </p>
+            </div>
+
+          </div>
+
+          <div class="tab">
+
+            <input type="radio" name="acc" id="acc2">
+
+            <label for="acc2">
+              <h2>02</h2>
+              <h3>Come avviene il pagamento?</h3>
+            </label>
+
+            <div class="content">
+              <p>
+                Il pagamento viene 
+                effettuato in una unica soluzione 
+                anticipata al momento della firma 
+                dell'incarico
+                </p>
+            </div>
+
+          </div>
+
+          <div class="tab">
+
+            <input type="radio" name="acc" id="acc3">
+
+            <label for="acc3">
+              <h2>03</h2>
+              <h3>Ho diritto al rimborso se non soddisfatto?</h3>
+            </label>
+
+            <div class="content">
+              <p>
+                Certamente. Entro i 30 giorni, in qualunque momento e per qualunque motivo, 
+                può essere chiesto il rimborso della somma totale senza pagamento di alcuna penale
+                </p>
+            </div>
+
+          </div>
+
+          <div class="tab">
+
+            <input type="radio" name="acc" id="acc4">
+
+            <label for="acc4">
+              <h2>04</h2>
+              <h3>I prezzi sono Iva inclusa o esclusa?</h3>
+            </label>
+
+            <div class="content">
+              <p>
+                I prezzi sono tutti IVA esclusa. 
+                Al momento del pagamento viene emessa fattura 
+                coi totali aggiornati compresa IVA
+                </p>
+            </div>
+
+          </div>
+
+          <div class="tab">
+
+            <input type="radio" name="acc" id="acc5">
+
+            <label for="acc5">
+              <h2>05</h2>
+              <h3>Posso avere una assistenza dopo i 30 giorni?</h3>
+            </label>
+
+            <div class="content">
+              <p>
+                Certamente, l'assistenza è sempre garantita 
+                per qualunque problema inerente al sito. 
+                Per assistenza extra dopo la messa online il prezzo verrà quantificato 
+                di volta in volta oppure potete usufruire dei nostri pacchetti 
+                di assistenza trimestrali, semestrali o annuali
+                </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
     </div>
     </div>
 

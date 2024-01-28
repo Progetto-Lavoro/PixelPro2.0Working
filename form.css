@@ -1,0 +1,36 @@
+.formCustom{
+    background: #19445c;
+    color: white;
+    width: 85%;
+    height: 85%;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.labelCustom{
+    padding: 6%;
+
+}
+.inputCustom{
+    background: #19445c;
+    border: 0;
+    border: 2px solid white;
+    margin: auto;
+    width: 60%;
+}
+.inputCustom::placeholder{
+    text-align: center;
+    color: white;
+}
+
+.textareaCustom{
+    background: #19445c;
+    border: 0;
+    border: 2px solid white;
+    margin: auto;
+    width:60%;
+}
+.textareaCustom::placeholder{
+    text-align: center;
+    color: white;
+}

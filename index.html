@@ -23,8 +23,7 @@
 </head>
 <body>
   
-  
-  
+    
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-main">
     <div class="container-fluid">
@@ -40,13 +39,16 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#project">Progetti</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#skill">Skill</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#about-us">Chi Siamo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#contact-form">Contattaci</a>
             </li>
           </ul>
         </div>
@@ -68,8 +70,7 @@
       </div>
     </div>
   </div>
-  
-  
+    
   <div class="text-overlay">
     <h1 class="hero-headline">Siti Web E Creatività Digitale Al Tuo Servizio</h1>
     <p class="hero-secondary-line">Il futuro del tuo business dipende dalla tua presenza online,
@@ -77,9 +78,10 @@
     </p>
   </div>
   
-  <!-- SEZIONE PROGETTI -->
+  <!-- SEZIONE PROGETTI / SKILL / ABOUT US / FAQ / FOOTER -->
   <section class="bg-main py-5" id="progetti">
-    <div class="container-fluid">
+    <!-- PROGETTI -->
+    <div class="container-fluid" id="project">
       <h1 class="section-title py-5" data-text="progetti">Progetti</h1>
       <p class="section-info">Alcuni dei nostri progetti, realizzati in questi ultimi anni,
         lavorando con un team fantastico. Da qui puoi prendere spunto per delle idee e cominciare
@@ -93,7 +95,7 @@
           
         </div>
         
-        <!-- PAGINATION CAROSELLO -->
+        <!-- PAGINATION CAROSELLO PROGETTI -->
         <div class="tranding-slider-control">
           <div class="swiper-button-prev slider-arrow">
             <ion-icon name="arrow-back-outline"></ion-icon>
@@ -106,13 +108,10 @@
         
       </div>
     </div>
-
   
-    <!-- SKILL CIRCLE -->
-  
-  
+    <!-- SKILL CIRCLE -->  
     <div class="container-fluid bg-main min-vh-100">
-    <div class="row">
+    <div class="row" id="skill">
       <div class="col-12">
         <h1 class="section-title py-5" data-text="Skill">Skill</h1>
         <p class="section-info">Alcuni dei nostri strumenti di lavoro!
@@ -774,39 +773,53 @@
     </div>
     </div>
 
-    <!-- modulo di contatto + informativa -->
+    <!-- ABOUT US -->
+    <div class="container-fluid bg-main min-vh-100">
+      <div class="row" id="about-us">
+        <div class="col-6">
+          <h1 class="section-title py-5" data-text="Chi siamo">Chi siamo</h1>
+          <p></p>
+        </div>
+        <div class="col-6">
+          <h3 class="section-title py-5" data-text="Prezzi">Listino prezzi</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT FORM + FAQ -->
     <div class="container-fluid bg-main ">
     <div class="row">
+      <!-- CALL TO ACTION -->
       <div class="col-12">
-        <h1 class="section-title py-5" data-text="Contatti">Chiamaci in Azione</h1>
+        <h1 class="section-title py-5" data-text="Contatti">Contattaci</h1>
         <p class="section-info">
           Compila questo modulo per contattarci segnalando nell'apposito campo giorno e ora in cui preferiresti 
           essere richiamato. Se lascerai questo campo vuoto ti risponderemo solo con email. 
           Sentiti libero di fare qualsiasi domanda. Ci piacerebbe conoscere le tue idee e lavorare con te.
         </p>
       </div>
+
       <!-- Form -->
-      <div class="col-12 col-lg-6 mb-5 mb-lg-2 d-flex justify-content-center align-items-center">
+      <div class="col-12 col-lg-6 mb-5 mb-lg-2 ms-5 ms-lg-0 d-flex justify-content-center align-items-center ">
         
         <form id="contact-form" class="formCustom" method="post">
-          <div class="mb-3">
-              <label for="user_name" class="form-label labelCustom">Name</label>
-              <input type="text" class="form-control inputCustom" name="user_name" placeholder="Tuo nome" id="user_name" required>
+          <div>
+            <label for="user_name" class="form-label labelCustom">Name</label>
+            <input type="text" class="form-control inputCustom" name="user_name" placeholder="Tuo nome" id="user_name" required>
           </div>
 
-          <div class="mb-3">
-              <label for="user_email" class="labelCustom">Email</label>
-              <input type="email" class="form-control inputCustom" name="user_email" placeholder="Tua mail" id="user_email" required>
+          <div>
+            <label for="user_email" class="labelCustom">Email</label>
+            <input type="email" class="form-control inputCustom" name="user_email" placeholder="Tua mail" id="user_email" required>
           </div>
 
-          <div class="mb-3">
-              <label for="message" class="labelCustom">Message</label>
-              <textarea class="form-control textareaCustom" name="message" id="message" rows="6" placeholder="Messaggio" required></textarea>
+          <div>
+            <label for="message" class="labelCustom">Message</label>
+            <textarea class="form-control textareaCustom" name="message" id="message" rows="6" placeholder="Messaggio" required></textarea>
           </div>
 
-          <div class="mb-3">
-              <!-- <input type="submit" class="btn btn-primary" onclick="sendMail()" value="Send"> -->
-              <button onclick="sendMail()" class="btn btn-primary">contattami</button>
+          <div class="d-flex mt-4 ms-5 justify-content-center">
+            <button onclick="sendMail()" class="btn btn-custom mt-1">contattami</button>
           </div>
         </form>
 
@@ -816,10 +829,10 @@
         <div class="recinto">
 
           <h1 class="text-white">Domande Frequenti!</h1>
-
+            
           <div class="tab">
 
-            <input type="radio" name="acc" id="acc1">
+            <input type="checkbox" name="acc" id="acc1">
 
             <label for="acc1">
               <h2>01</h2>
@@ -837,7 +850,7 @@
 
           <div class="tab">
 
-            <input type="radio" name="acc" id="acc2">
+            <input type="checkbox" name="acc" id="acc2">
 
             <label for="acc2">
               <h2>02</h2>
@@ -857,7 +870,7 @@
 
           <div class="tab">
 
-            <input type="radio" name="acc" id="acc3">
+            <input type="checkbox" name="acc" id="acc3">
 
             <label for="acc3">
               <h2>03</h2>
@@ -875,7 +888,7 @@
 
           <div class="tab">
 
-            <input type="radio" name="acc" id="acc4">
+            <input type="checkbox" name="acc" id="acc4">
 
             <label for="acc4">
               <h2>04</h2>
@@ -894,7 +907,7 @@
 
           <div class="tab">
 
-            <input type="radio" name="acc" id="acc5">
+            <input type="checkbox" name="acc" id="acc5">
 
             <label for="acc5">
               <h2>05</h2>
@@ -931,9 +944,10 @@
 
           <div class="col-4 d-flex justify-content-between align-items-center ">
             <a class="text-white text-decoration-none" href="/">Home</a>
-            <a class="text-white text-decoration-none" href="/">Home</a>
-            <a class="text-white text-decoration-none" href="/">Home</a>
-            <a class="text-white text-decoration-none" href="/">Home</a>
+            <a class="text-white text-decoration-none" href="#project">Progetti</a>
+            <a class="text-white text-decoration-none" href="#skill">Skill</a>
+            <a class="text-white text-decoration-none" href="#about-us">Chi Siamo</a>
+            <a class="text-white text-decoration-none" href="#contact-form">Contattaci</a>
           </div>
 
           <div class="col-12 d-flex justify-content-end align-items-center fs-6 pb-3">

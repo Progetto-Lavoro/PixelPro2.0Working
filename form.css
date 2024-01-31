@@ -3,34 +3,62 @@
     color: white;
     width: 85%;
     height: 85%;
-    text-align: center;
+    text-align: start;
     font-size: 1.6em;
 }
 
 .labelCustom{
-    padding: 6%;
+    padding: 2%;
 
 }
 .inputCustom{
     background: #19445c;
     border: 0;
-    border: 2px solid white;
-    margin: auto;
+    border: 1px solid white;  
+    box-shadow: 0 0 2px 1px inset white; 
     width: 60%;
 }
+
 .inputCustom::placeholder{
-    text-align: center;
+    text-align: start;
     color: white;
 }
 
 .textareaCustom{
     background: #19445c;
     border: 0;
-    border: 2px solid white;
-    margin: auto;
+    border: 1px solid white;
+    box-shadow: 0 0 2px 1px inset white; 
     width:60%;
 }
 .textareaCustom::placeholder{
-    text-align: center;
+    text-align: start;
     color: white;
+}
+
+/* CSS BUTTON */
+.btn-custom {
+  align-items: center;
+  appearance: button;
+  background-color: #0276FF;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  touch-action: manipulation;
+  /* touch-action serve su mobile per evitare di eseguire 
+  le azioni predefinite come lo scorrimento della pagina o il ridimensionamento dello zoom  */
+}
+
+.btn-custom:active {
+  background-color: #041e3e;
+}
+
+.btn-custom:hover {
+  background-color: #cfe4ff;
 }

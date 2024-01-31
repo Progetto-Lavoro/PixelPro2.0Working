@@ -348,15 +348,30 @@ projects.forEach(project => {
   projectElement.className = 'swiper-slide tranding-slide w-auto';
   projectElement.innerHTML = `
     <a href=${project.live} target="_blank">
-    <div class="tranding-slide-img">
-    <img src=${project.image} alt=${project.name}>
-    </div>
-    <div class="tranding-slide-content">              
-    <div class="tranding-slide-content-bottom">                
-    </div>
-    </div>
+      <div class="tranding-slide-img">
+        <img src=${project.image} alt=${project.name}>
+      </div>
+      <div class="tranding-slide-content">              
+        <div class="tranding-slide-content-bottom">                
+        </div>
+      </div>
     </a>
   `;
   
   projectContainer.appendChild(projectElement);
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+        // Trova tutti gli input di tipo checkbox all'interno delle classi .recinto
+        const checkboxes = document.querySelectorAll('.recinto input[type="checkbox"]');
+
+        checkboxes.forEach(function (checkbox) {
+            checkbox.addEventListener('change', function () {
+                // Trova il contenitore .content corrispondente al checkbox
+                const content = this.parentElement.querySelector('.content');
+
+                // Se il checkbox è selezionato, mostra il contenuto, altrimenti nascondilo
+                content.style.maxHeight = this.checked ? '100vh' : '0';
+            });
+        });
+    });

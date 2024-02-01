@@ -361,17 +361,24 @@ projects.forEach(project => {
   projectContainer.appendChild(projectElement);
 });
 
+// FUNZIONE + DELLE FAQ
 document.addEventListener('DOMContentLoaded', function () {
-        // Trova tutti gli input di tipo checkbox all'interno delle classi .recinto
-        const checkboxes = document.querySelectorAll('.recinto input[type="checkbox"]');
+  // Trova tutti gli input di tipo checkbox all'interno delle classi .recinto
+  const radios = document.querySelectorAll('.recinto input[type="radio]');
 
-        checkboxes.forEach(function (checkbox) {
-            checkbox.addEventListener('change', function () {
-                // Trova il contenitore .content corrispondente al checkbox
-                const content = this.parentElement.querySelector('.content');
+  radios.forEach(function (radio) {
+    radio.addEventListener('change', function () {
+      // Trova il contenitore .content corrispondente al radio
+      const content = this.parentElement.querySelector('.content');
 
-                // Se il checkbox è selezionato, mostra il contenuto, altrimenti nascondilo
-                content.style.maxHeight = this.checked ? '100vh' : '0';
-            });
-        });
+      // Nascondi il contenuto di tutte le radio
+      radios.forEach(function (otherRadio) {
+        const otherContent = otherRadio.parentElement.querySelector('.content');
+        otherContent.style.maxHeight = '0';
+      });
+
+      // Se il radio è selezionato, mostra il contenuto, altrimenti nascondilo
+      content.style.maxHeight = this.checked ? '100vh' : initialState.maxHeight;
     });
+  });
+});
